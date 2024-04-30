@@ -16,7 +16,7 @@ function NewMeetupPage() {
         },
       }
     ).then(() => {
-      navigate("/");
+      navigate("/react-course/",{replace:true});
     });
     // Use navigate here instead of inside the async function
   }
