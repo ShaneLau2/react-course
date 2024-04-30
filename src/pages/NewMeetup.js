@@ -6,19 +6,20 @@ function NewMeetupPage() {
 
   function MeetupHandler(meetupData) {
     console.log(meetupData);
-    fetch(
-      "https://react-course-1ef24-default-rtdb.firebaseio.com/meetups.json",
-      {
-        method: "POST",
-        body: JSON.stringify(meetupData),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    ).then(() => {
-      navigate("/react-course/",{replace:true});
-    });
+    // fetch(
+    //   "https://react-course-1ef24-default-rtdb.firebaseio.com/meetups.json",
+    //   {
+    //     method: "POST",
+    //     body: JSON.stringify(meetupData),
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //   }
+    // ).then(() => {
+    //   navigate("/react-course/",{replace:true});
+    // });
     // Use navigate here instead of inside the async function
+    navigate("/react-course/", { replace: true });
   }
 
   return (

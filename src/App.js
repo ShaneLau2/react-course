@@ -9,9 +9,9 @@ function App() {
     <div>
       <Layout>
         <Routes>
-          <Route path="react-course/" element={<AllMeetupsPage />} />
-          <Route path="react-course/favorites" element={<FavoritesPage />} />
-          <Route path="react-course/new-meetup" element={<NewMeetupPage />} />
+          <Route path="/react-course/" element={<AllMeetupsPage />} />
+          <Route path="/react-course/favorites" element={<FavoritesPage />} />
+          <Route path="/react-course/new-meetup" element={<NewMeetupPage />} />
         </Routes>
       </Layout>
     </div>
